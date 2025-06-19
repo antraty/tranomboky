@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres par Thématique - Bibliothèque Numérique Malagasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div><img src="images/logo_3.png" alt="logo_biblio-tech" class="img_logo"></div>
+        <div class="header-content">
+            <h1>Bibliothèque Numérique Malagasy</h1>
+            <p class="tagline">La bibliothèque numérique, pour une lecture publique</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un titre, auteur, mot-clé...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div class="books-layout">
+        <!-- Sidebar -->
+        <aside class="books-sidebar">
+            <div class="sidebar-section">
+                <h3><i class="fas fa-list-ul"></i> Thématiques</h3>
+                <ul class="themes-list">
+                    <li><a href="#"><i class="fas fa-child"></i> Enfance et Jeunesse</a></li>
+                    <li><a href="#"><i class="fas fa-school"></i> Scolaire et Pédagogique</a></li>
+                    <li><a href="#"><i class="fas fa-spa"></i> Art de vivre et Bien-être</a></li>
+                    <li><a href="#"><i class="fas fa-mountain"></i> Loisirs - Nature et Voyages</a></li>
+                    <li><a href="article.html"><i class="fas fa-newspaper"></i> Articles de Journaux</a></li>
+                    <li><a href="#"><i class="fas fa-globe-africa"></i> Malagasy</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-book-open"></i> Littératures et Romans</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Apprentissages et Tutoriels</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-filter"></i> Filtres</h3>
+                <div class="filter-group">
+                    <h4>Par auteur</h4>
+                    <select>
+                        <option>Tous les auteurs</option>
+                        <option>Auteur Malgache</option>
+                        <option>Auteur International</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <h4>Par année</h4>
+                    <select>
+                        <option>Toutes les années</option>
+                        <option>2020-2023</option>
+                        <option>2010-2019</option>
+                        <option>Avant 2010</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-fire"></i> Top 5</h3>
+                <ol class="top-list">
+                    <li><a href="#">Le Secret de la Forêt</a></li>
+                    <li><a href="#">Les Larmes du Baobab</a></li>
+                    <li><a href="#">Ny Voromahery</a></li>
+                    <li><a href="#">Tanàna sy Fomban-drazana</a></li>
+                    <li><a href="#">Mora-mora</a></li>
+                </ol>
+            </div>
+
+            <a href="index.html" class="sidebar-home">
+                <i class="fas fa-arrow-left"></i> Retour à l'accueil
+            </a>
+        </aside>
+
+        <!-- Contenu principal -->
+        <main class="books-main">
+            <div class="books-header">
+                <h2><i class="fas fa-book-open"></i> Littératures et Romans</h2>
+                <div class="books-count">128 livres disponibles</div>
+            </div>
+
+            <div class="books-grid">
+                <!-- Livre 1 -->
+                <div class="book-item">
+                    <a href="livre.html">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+1" alt="Couverture du livre">
+                            <div class="book-badge">Nouveau</div>
+                        </div>
+                        <h3>Le Secret de la Forêt</h3>
+                        <p class="book-author">Jean Rakoto</p>
+                    </a>
+                </div>
+
+                <!-- Livre 2 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+2" alt="Couverture du livre">
+                        </div>
+                        <h3>Les Larmes du Baobab</h3>
+                        <p class="book-author">Marie Ranaivo</p>
+                    </a>
+                </div>
+
+                <!-- Livre 3 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+3" alt="Couverture du livre">
+                            <div class="book-badge">Populaire</div>
+                        </div>
+                        <h3>Ny Voromahery</h3>
+                        <p class="book-author">Paul Randria</p>
+                    </a>
+                </div>
+
+                <!-- Livre 4 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+4" alt="Couverture du livre">
+                        </div>
+                        <h3>Tanàna sy Fomban-drazana</h3>
+                        <p class="book-author">Lucie Andriamalala</p>
+                    </a>
+                </div>
+
+                <!-- Livre 5 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+5" alt="Couverture du livre">
+                        </div>
+                        <h3>Mora-mora</h3>
+                        <p class="book-author">Pierre Rajaonarivelo</p>
+                    </a>
+                </div>
+
+                <!-- Livre 6 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+6" alt="Couverture du livre">
+                        </div>
+                        <h3>Les Enfants du Riz</h3>
+                        <p class="book-author">Sophie Rasoanaivo</p>
+                    </a>
+                </div>
+
+                <!-- Livre 7 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+7" alt="Couverture du livre">
+                            <div class="book-badge">Classique</div>
+                        </div>
+                        <h3>L'Ombre des Ancêtres</h3>
+                        <p class="book-author">Jacques Rabemananjara</p>
+                    </a>
+                </div>
+
+                <!-- Livre 8 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+8" alt="Couverture du livre">
+                        </div>
+                        <h3>Le Chant des Collines</h3>
+                        <p class="book-author">Eline Ralison</p>
+                    </a>
+                </div>
+
+                <!-- Livre 9 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+9" alt="Couverture du livre">
+                        </div>
+                        <h3>Révolte au Village</h3>
+                        <p class="book-author">Marc Ravalomanana</p>
+                    </a>
+                </div>
+
+                <!-- Livre 10 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+10" alt="Couverture du livre">
+                        </div>
+                        <h3>La Piste Rouge</h3>
+                        <p class="book-author">Claire Ramanantsoa</p>
+                    </a>
+                </div>
+
+                <!-- Livre 11 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+11" alt="Couverture du livre">
+                        </div>
+                        <h3>Famadihana</h3>
+                        <p class="book-author">Thomas Randriamahazo</p>
+                    </a>
+                </div>
+
+                <!-- Livre 12 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+12" alt="Couverture du livre">
+                        </div>
+                        <h3>Le Souffle du Zanahary</h3>
+                        <p class="book-author">Sarah Randrianarisoa</p>
+                    </a>
+                </div>
+
+                <!-- Livre 13 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+13" alt="Couverture du livre">
+                        </div>
+                        <h3>Vazaha à Tana</h3>
+                        <p class="book-author">David Rakotondrabe</p>
+                    </a>
+                </div>
+
+                <!-- Livre 14 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+14" alt="Couverture du livre">
+                        </div>
+                        <h3>Mémoires d'un Mpanjaka</h3>
+                        <p class="book-author">Laurent Razafindrabe</p>
+                    </a>
+                </div>
+
+                <!-- Livre 15 -->
+                <div class="book-item">
+                    <a href="#">
+                        <div class="book-cover">
+                            <img src="https://via.placeholder.com/180x250?text=Livre+15" alt="Couverture du livre">
+                        </div>
+                        <h3>Le Dernier Bagnard</h3>
+                        <p class="book-author">Estelle Ranaivonirina</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-btn disabled"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn">4</a>
+                <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </main>
+    </div>
+
+    <a href="index.html" class="home-button">
+        <i class="fas fa-arrow-left"></i> Accueil
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos</h3>
+                <p>La Bibliothèque Numérique Malagasy a pour mission de rendre la lecture accessible à tous à travers Madagascar.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@bibliomada.mg</p>
+                <p><i class="fas fa-phone"></i> +261 34 00 000 00</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Devenir partenaire</a></li>
+                    <li><a href="#">Faire un don</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bibliothèque Numérique Malagasy. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque Numérique Malagasy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div><img src="images/logo_3.png" alt="logo_biblio-tech" class="img_logo"></div>
+        <div class="header-content">
+            <h1>Bibliothèque Numérique Malagasy</h1>
+            <p class="tagline">Lire, apprendre, réver..., ne pas gacher la journée.</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un titre, auteur, mot-clé...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <section class="popular-books">
+            <h2>Explorer les livres les plus populaires en ce moment</h2>
+            <div class="slider-container">
+                <button class="slider-btn prev-btn" onclick="moveSlide(-1, 'popular')"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider popular-slider">
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement.jpeg" alt="Livre 0" />
+                            <p>Titre du Livre 1</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement (1).jpeg" alt="Livre 1" />
+                            <p>Titre du Livre 2</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement (2).jpeg" alt="Livre 2" />
+                            <p>Titre du Livre 3</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement (3).jpeg" alt="Livre 3" />
+                            <p>Titre du Livre 4</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement (4).jpeg" alt="Livre 4" />
+                            <p>Titre du Livre 5</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/art de vivre/téléchargement (5).jpeg" alt="Livre 5" />
+                            <p>Titre du Livre 6</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" onclick="moveSlide(1, 'popular')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="new-releases">
+            <h2>Nouveautés à découvrir</h2>
+            <div class="slider-container">
+                <button class="slider-btn prev-btn" onclick="moveSlide(-1, 'new')"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider new-slider">
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/romans/téléchargement (1).jpeg" alt="Nouveau Livre 1" />
+                            <p>Nouveau Livre 1</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/romans/téléchargement (2).jpeg" alt="Nouveau Livre 2" />
+                            <p>Nouveau Livre 2</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/romans/téléchargement (3).jpeg" alt="Nouveau Livre 2" />
+                            <p>Nouveau Livre 3</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/romans/téléchargement (4).jpeg" alt="Nouveau Livre 2" />
+                            <p>Nouveau Livre 4</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/romans/téléchargement.jpeg" alt="Nouveau Livre 2" />
+                            <p>Nouveau Livre 5</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" onclick="moveSlide(1, 'new')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="themes">
+            <h2>Choisissez par thématique</h2>
+            <div class="theme-grid">
+                <a href="#" class="theme-box education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Scolaire et pédagogique</span>
+                </a>
+                <a href="liste.html" class="theme-box novel">
+                    <i class="fas fa-book-open"></i>
+                    <span> Littérature et Romans</span>
+                </a>
+                <a href="article.html" class="theme-box articles">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Articles</span>
+                </a>
+                <a href="#" class="theme-box angano">
+                    <i class="fas fa-moon"></i>
+                    <span>Malagasy</span>
+                </a>
+                <a href="thematiques.html" class="theme-box all-themes">
+                    <i class="fas fa-list"></i>
+                    <span>Toutes les thématiques</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="audiobooks">
+            <h2>Livres audio à écouter</h2>
+            <div class="slider-container">
+                <button class="slider-btn prev-btn" onclick="moveSlide(-1, 'audio')"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider audio-slider">
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/voyages/images (1).jpeg" alt="Audio Livre 1" />
+                            <p><i class="fas fa-headphones"></i> Livre Audio 1</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/voyages/images.jpeg" alt="Audio Livre 2" />
+                            <p><i class="fas fa-headphones"></i> Livre Audio 2</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/voyages/téléchargement.jpeg" alt="Audio Livre 2" />
+                            <p><i class="fas fa-headphones"></i> Livre Audio 3</p>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/voyages/téléchargement (1).jpeg" alt="Audio Livre 2" />
+                            <p><i class="fas fa-headphones"></i> Livre Audio 4</p>
+                        </a>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" onclick="moveSlide(1, 'audio')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À propos</h3>
+                <p>La Bibliothèque Numérique Malagasy a pour mission de rendre la lecture accessible à tous à travers Madagascar.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@bibliomada.mg</p>
+                <p><i class="fas fa-phone"></i> +261 34 00 000 00</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Devenir partenaire</a></li>
+                    <li><a href="#">Faire un don</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bibliothèque Numérique Malagasy. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
